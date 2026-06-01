@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Sensitive
+.env
+
+# Instructor-only material — NEVER commit to the student repo.
+# These belong on the instructor's laptop only, not in the student workspace.
+dispatcher_solution.py
+build_scenarios.py

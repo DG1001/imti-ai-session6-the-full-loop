@@ -1,0 +1,814 @@
+[
+  {
+    "id": "acc_open_01",
+    "tier": "clean",
+    "reading": {
+      "room": "A115",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 22.5,
+      "humidity_pct": 45,
+      "iaq": 142,
+      "recent_iaq": [
+        138,
+        143,
+        140,
+        145,
+        141,
+        144,
+        142,
+        139
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"A115\", \"duration_min\": 15}",
+    "expected": {
+      "accept": true,
+      "reason": null
+    }
+  },
+  {
+    "id": "acc_open_02",
+    "tier": "clean",
+    "reading": {
+      "room": "B201",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 24.0,
+      "humidity_pct": 50,
+      "iaq": 175,
+      "recent_iaq": [
+        171,
+        176,
+        173,
+        178,
+        174,
+        177,
+        175,
+        172
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"B201\", \"duration_min\": 20}",
+    "expected": {
+      "accept": true,
+      "reason": null
+    }
+  },
+  {
+    "id": "acc_open_03",
+    "tier": "clean",
+    "reading": {
+      "room": "C103",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 21.0,
+      "humidity_pct": 48,
+      "iaq": 121,
+      "recent_iaq": [
+        117,
+        122,
+        119,
+        124,
+        120,
+        123,
+        121,
+        118
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"C103\", \"duration_min\": 10}",
+    "expected": {
+      "accept": true,
+      "reason": null
+    }
+  },
+  {
+    "id": "acc_open_04",
+    "tier": "clean",
+    "reading": {
+      "room": "A116",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 26.0,
+      "humidity_pct": 55,
+      "iaq": 205,
+      "recent_iaq": [
+        201,
+        206,
+        203,
+        208,
+        204,
+        207,
+        205,
+        202
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"A116\", \"duration_min\": 30}",
+    "expected": {
+      "accept": true,
+      "reason": null
+    }
+  },
+  {
+    "id": "acc_open_05",
+    "tier": "clean",
+    "reading": {
+      "room": "B202",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 23.0,
+      "humidity_pct": 47,
+      "iaq": 133,
+      "recent_iaq": [
+        129,
+        134,
+        131,
+        136,
+        132,
+        135,
+        133,
+        130
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"B202\", \"duration_min\": 12}",
+    "expected": {
+      "accept": true,
+      "reason": null
+    }
+  },
+  {
+    "id": "acc_open_06_borderline",
+    "tier": "clean",
+    "reading": {
+      "room": "A115",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 22.0,
+      "humidity_pct": 44,
+      "iaq": 101,
+      "recent_iaq": [
+        97,
+        102,
+        99,
+        104,
+        100,
+        103,
+        101,
+        98
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"A115\", \"duration_min\": 8}",
+    "expected": {
+      "accept": true,
+      "reason": null
+    },
+    "note": "IAQ just over the 101 line \u2014 a valid open."
+  },
+  {
+    "id": "acc_noop_01",
+    "tier": "clean",
+    "reading": {
+      "room": "A116",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 21.0,
+      "humidity_pct": 40,
+      "iaq": 38,
+      "recent_iaq": [
+        34,
+        39,
+        36,
+        41,
+        37,
+        40,
+        38,
+        35
+      ]
+    },
+    "proposal": "{\"action\": \"do_nothing\"}",
+    "expected": {
+      "accept": true,
+      "reason": null
+    }
+  },
+  {
+    "id": "acc_noop_02",
+    "tier": "clean",
+    "reading": {
+      "room": "B201",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 22.0,
+      "humidity_pct": 43,
+      "iaq": 72,
+      "recent_iaq": [
+        68,
+        73,
+        70,
+        75,
+        71,
+        74,
+        72,
+        69
+      ]
+    },
+    "proposal": "{\"action\": \"do_nothing\"}",
+    "expected": {
+      "accept": true,
+      "reason": null
+    }
+  },
+  {
+    "id": "acc_noop_03",
+    "tier": "clean",
+    "reading": {
+      "room": "C103",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 20.0,
+      "humidity_pct": 46,
+      "iaq": 88,
+      "recent_iaq": [
+        84,
+        89,
+        86,
+        91,
+        87,
+        90,
+        88,
+        85
+      ]
+    },
+    "proposal": "{\"action\": \"do_nothing\"}",
+    "expected": {
+      "accept": true,
+      "reason": null
+    }
+  },
+  {
+    "id": "acc_noop_04",
+    "tier": "clean",
+    "reading": {
+      "room": "B202",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 21.5,
+      "humidity_pct": 42,
+      "iaq": 55,
+      "recent_iaq": [
+        51,
+        56,
+        53,
+        58,
+        54,
+        57,
+        55,
+        52
+      ]
+    },
+    "proposal": "{\"action\": \"do_nothing\"}",
+    "expected": {
+      "accept": true,
+      "reason": null
+    }
+  },
+  {
+    "id": "acc_noop_05",
+    "tier": "clean",
+    "reading": {
+      "room": "A115",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 22.0,
+      "humidity_pct": 45,
+      "iaq": 67,
+      "recent_iaq": [
+        63,
+        68,
+        65,
+        70,
+        66,
+        69,
+        67,
+        64
+      ]
+    },
+    "proposal": "{\"action\": \"do_nothing\"}",
+    "expected": {
+      "accept": true,
+      "reason": null
+    }
+  },
+  {
+    "id": "acc_noop_06_borderline",
+    "tier": "clean",
+    "reading": {
+      "room": "A116",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 21.0,
+      "humidity_pct": 44,
+      "iaq": 100,
+      "recent_iaq": [
+        96,
+        101,
+        98,
+        103,
+        99,
+        102,
+        100,
+        97
+      ]
+    },
+    "proposal": "{\"action\": \"do_nothing\"}",
+    "expected": {
+      "accept": true,
+      "reason": null
+    },
+    "note": "IAQ exactly 100 \u2014 not > 100, so do_nothing is correct."
+  },
+  {
+    "id": "acc_hyst_far",
+    "tier": "hysteresis",
+    "reading": {
+      "room": "B201",
+      "timestamp": "2026-06-01T10:00:00",
+      "temperature_c": 23.0,
+      "humidity_pct": 48,
+      "iaq": 140,
+      "recent_iaq": [
+        136,
+        141,
+        138,
+        143,
+        139,
+        142,
+        140,
+        137
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"B201\", \"duration_min\": 15}",
+    "expected": {
+      "accept": true,
+      "reason": null
+    },
+    "last_command": {
+      "room": "B201",
+      "ts": "2026-06-01T09:30:00"
+    },
+    "note": "Last command was 30 min ago \u2014 well outside the cooldown, so this is fine."
+  },
+  {
+    "id": "rej_schema_prose",
+    "tier": "schema",
+    "reading": {
+      "room": "A115",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 22.0,
+      "humidity_pct": 45,
+      "iaq": 130,
+      "recent_iaq": [
+        126,
+        131,
+        128,
+        133,
+        129,
+        132,
+        130,
+        127
+      ]
+    },
+    "proposal": "The air feels a little stuffy in here, so I'll open the window for a while.",
+    "expected": {
+      "accept": false,
+      "reason": "schema"
+    },
+    "note": "Prose instead of JSON."
+  },
+  {
+    "id": "rej_schema_string_duration",
+    "tier": "schema",
+    "reading": {
+      "room": "A116",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 23.0,
+      "humidity_pct": 46,
+      "iaq": 150,
+      "recent_iaq": [
+        146,
+        151,
+        148,
+        153,
+        149,
+        152,
+        150,
+        147
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"A116\", \"duration_min\": \"30\"}",
+    "expected": {
+      "accept": false,
+      "reason": "schema"
+    },
+    "note": "duration_min is the STRING \"30\", not the integer 30. Never coerce it."
+  },
+  {
+    "id": "rej_schema_missing_field",
+    "tier": "schema",
+    "reading": {
+      "room": "B202",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 24.0,
+      "humidity_pct": 50,
+      "iaq": 160,
+      "recent_iaq": [
+        156,
+        161,
+        158,
+        163,
+        159,
+        162,
+        160,
+        157
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"B202\"}",
+    "expected": {
+      "accept": false,
+      "reason": "schema"
+    },
+    "note": "Missing duration_min."
+  },
+  {
+    "id": "rej_schema_wrong_action",
+    "tier": "schema",
+    "reading": {
+      "room": "C103",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 22.0,
+      "humidity_pct": 47,
+      "iaq": 145,
+      "recent_iaq": [
+        141,
+        146,
+        143,
+        148,
+        144,
+        147,
+        145,
+        142
+      ]
+    },
+    "proposal": "{\"action\": \"ventilate\", \"room\": \"C103\", \"duration_min\": 10}",
+    "expected": {
+      "accept": false,
+      "reason": "schema"
+    },
+    "note": "\"ventilate\" is not one of the two allowed actions."
+  },
+  {
+    "id": "rej_schema_malformed_json",
+    "tier": "schema",
+    "reading": {
+      "room": "A115",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 22.0,
+      "humidity_pct": 45,
+      "iaq": 135,
+      "recent_iaq": [
+        131,
+        136,
+        133,
+        138,
+        134,
+        137,
+        135,
+        132
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"A115\", \"duration_min\": 15",
+    "expected": {
+      "accept": false,
+      "reason": "schema"
+    },
+    "note": "Truncated JSON \u2014 does not parse."
+  },
+  {
+    "id": "rej_schema_extra_field",
+    "tier": "schema",
+    "reading": {
+      "room": "A116",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 21.0,
+      "humidity_pct": 44,
+      "iaq": 75,
+      "recent_iaq": [
+        71,
+        76,
+        73,
+        78,
+        74,
+        77,
+        75,
+        72
+      ]
+    },
+    "proposal": "{\"action\": \"do_nothing\", \"extra\": true}",
+    "expected": {
+      "accept": false,
+      "reason": "schema"
+    },
+    "note": "A do_nothing must carry no other fields."
+  },
+  {
+    "id": "rej_room_unknown",
+    "tier": "range",
+    "reading": {
+      "room": "B201",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 23.0,
+      "humidity_pct": 48,
+      "iaq": 138,
+      "recent_iaq": [
+        134,
+        139,
+        136,
+        141,
+        137,
+        140,
+        138,
+        135
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"B210\", \"duration_min\": 12}",
+    "expected": {
+      "accept": false,
+      "reason": "unknown_room"
+    },
+    "note": "B210 is not one of the five real rooms."
+  },
+  {
+    "id": "rej_duration_high",
+    "tier": "range",
+    "reading": {
+      "room": "C103",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 22.0,
+      "humidity_pct": 47,
+      "iaq": 152,
+      "recent_iaq": [
+        148,
+        153,
+        150,
+        155,
+        151,
+        154,
+        152,
+        149
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"C103\", \"duration_min\": 90}",
+    "expected": {
+      "accept": false,
+      "reason": "duration_range"
+    },
+    "note": "90 minutes is out of [1, 30]."
+  },
+  {
+    "id": "rej_duration_zero",
+    "tier": "range",
+    "reading": {
+      "room": "A116",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 23.0,
+      "humidity_pct": 46,
+      "iaq": 144,
+      "recent_iaq": [
+        140,
+        145,
+        142,
+        147,
+        143,
+        146,
+        144,
+        141
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"A116\", \"duration_min\": 0}",
+    "expected": {
+      "accept": false,
+      "reason": "duration_range"
+    },
+    "note": "0 minutes is out of [1, 30]."
+  },
+  {
+    "id": "rej_duration_negative",
+    "tier": "range",
+    "reading": {
+      "room": "B201",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 23.0,
+      "humidity_pct": 48,
+      "iaq": 150,
+      "recent_iaq": [
+        146,
+        151,
+        148,
+        153,
+        149,
+        152,
+        150,
+        147
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"B201\", \"duration_min\": -5}",
+    "expected": {
+      "accept": false,
+      "reason": "duration_range"
+    },
+    "note": "A negative duration."
+  },
+  {
+    "id": "rej_hyst_3s",
+    "tier": "hysteresis",
+    "reading": {
+      "room": "A115",
+      "timestamp": "2026-06-01T09:15:03",
+      "temperature_c": 22.0,
+      "humidity_pct": 45,
+      "iaq": 131,
+      "recent_iaq": [
+        127,
+        132,
+        129,
+        134,
+        130,
+        133,
+        131,
+        128
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"A115\", \"duration_min\": 15}",
+    "expected": {
+      "accept": false,
+      "reason": "hysteresis"
+    },
+    "last_command": {
+      "room": "A115",
+      "ts": "2026-06-01T09:15:00"
+    },
+    "note": "A second command 3 seconds after the last one on the same room."
+  },
+  {
+    "id": "rej_hyst_2min",
+    "tier": "hysteresis",
+    "reading": {
+      "room": "B202",
+      "timestamp": "2026-06-01T11:00:00",
+      "temperature_c": 23.0,
+      "humidity_pct": 47,
+      "iaq": 149,
+      "recent_iaq": [
+        145,
+        150,
+        147,
+        152,
+        148,
+        151,
+        149,
+        146
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"B202\", \"duration_min\": 10}",
+    "expected": {
+      "accept": false,
+      "reason": "hysteresis"
+    },
+    "last_command": {
+      "room": "B202",
+      "ts": "2026-06-01T10:58:00"
+    },
+    "note": "2 minutes later \u2014 still inside the cooldown window."
+  },
+  {
+    "id": "rej_safety_room_mismatch",
+    "tier": "safety",
+    "reading": {
+      "room": "A115",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 22.0,
+      "humidity_pct": 45,
+      "iaq": 130,
+      "recent_iaq": [
+        126,
+        131,
+        128,
+        133,
+        129,
+        132,
+        130,
+        127
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"B201\", \"duration_min\": 15}",
+    "expected": {
+      "accept": false,
+      "reason": "safety_room_mismatch"
+    },
+    "note": "Valid room, but NOT the room this reading came from."
+  },
+  {
+    "id": "rej_safety_too_cold",
+    "tier": "safety",
+    "reading": {
+      "room": "C103",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 3.0,
+      "humidity_pct": 50,
+      "iaq": 155,
+      "recent_iaq": [
+        151,
+        156,
+        153,
+        158,
+        154,
+        157,
+        155,
+        152
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"C103\", \"duration_min\": 20}",
+    "expected": {
+      "accept": false,
+      "reason": "safety_too_cold"
+    },
+    "note": "IAQ says open, but the room is at 3 C \u2014 opening would be unsafe."
+  },
+  {
+    "id": "veto_stuck_sensor",
+    "tier": "inbound",
+    "reading": {
+      "room": "A116",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 22.0,
+      "humidity_pct": 45,
+      "iaq": 142,
+      "recent_iaq": [
+        142.0,
+        142.0,
+        142.0,
+        142.0,
+        142.0,
+        142.0,
+        142.0,
+        142.0
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"A116\", \"duration_min\": 15}",
+    "expected": {
+      "accept": false,
+      "reason": "stuck_sensor"
+    },
+    "note": "The proposal is valid, but the sensor has been flatlined at 142 for hours."
+  },
+  {
+    "id": "veto_impossible_humidity",
+    "tier": "inbound",
+    "reading": {
+      "room": "B201",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 22.0,
+      "humidity_pct": 110,
+      "iaq": 120,
+      "recent_iaq": [
+        116,
+        121,
+        118,
+        123,
+        119,
+        122,
+        120,
+        117
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"B201\", \"duration_min\": 15}",
+    "expected": {
+      "accept": false,
+      "reason": "impossible_humidity"
+    },
+    "note": "Humidity of 110% is physically impossible \u2014 the reading cannot be trusted."
+  },
+  {
+    "id": "veto_spike",
+    "tier": "inbound",
+    "reading": {
+      "room": "B202",
+      "timestamp": "2026-06-01T09:30:00",
+      "temperature_c": 22.0,
+      "humidity_pct": 43,
+      "iaq": 230,
+      "recent_iaq": [
+        44,
+        46,
+        45,
+        45,
+        47,
+        44,
+        46,
+        45
+      ]
+    },
+    "proposal": "{\"action\": \"open_window\", \"room\": \"B202\", \"duration_min\": 15}",
+    "expected": {
+      "accept": false,
+      "reason": "spike"
+    },
+    "note": "IAQ jumps from a stable ~45 to 230 in one sample \u2014 a glitch, not real air."
+  }
+]
